@@ -1,4 +1,4 @@
-speakeasyVersion: 1.378.0
+speakeasyVersion: internal
 sources:
     mistral-azure-source:
         sourceNamespace: mistral-openapi-azure
@@ -39,7 +39,7 @@ targets:
         sourceNamespace: mistral-openapi
         sourceRevisionDigest: sha256:421a4bd55fd50ba00d6ebf2db603888009e9996b642b0499110c223fd6ca21c2
         sourceBlobDigest: sha256:1c87b4b8287f6a3083167c13ab59c5e7ac180ab7e19ad1532f3f46495cc12a26
-        outLocation: /github/workspace/repo
+        outLocation: /tmp/snapshot-test/d529e74b9f7e9258
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
