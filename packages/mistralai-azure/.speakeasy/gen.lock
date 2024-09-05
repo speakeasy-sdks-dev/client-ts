@@ -4,7 +4,7 @@ management:
   docChecksum: 9128fabc3ae45ecc9ed7fae8991b3d3e
   docVersion: 0.0.2
   speakeasyVersion: internal
-  generationVersion: 2.410.1
+  generationVersion: 2.410.0
   releaseVersion: 1.0.4
   configChecksum: 1bf151a94ed63e8a355876d008b39575
   repoURL: https://github.com/mistralai/client-ts.git
