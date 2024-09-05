@@ -26,7 +26,7 @@ const mistral = new Mistral({
 
 async function run() {
   const result = await mistral.fineTuning.jobs.list({});
-
+  
   // Handle the result
   console.log(result)
 }
@@ -102,7 +102,7 @@ async function run() {
     model: "codestral-latest",
     hyperparameters: {},
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -180,7 +180,7 @@ async function run() {
   const result = await mistral.fineTuning.jobs.get({
     jobId: "b18d8d81-fd7b-4764-a31e-475cb1f36591",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -257,7 +257,7 @@ async function run() {
   const result = await mistral.fineTuning.jobs.cancel({
     jobId: "03fa7112-315a-4072-a9f2-43f3f1ec962e",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -334,7 +334,7 @@ async function run() {
   const result = await mistral.fineTuning.jobs.start({
     jobId: "0eb0f807-fb9f-4e46-9c13-4e257df6e1ba",
   });
-
+  
   // Handle the result
   console.log(result)
 }

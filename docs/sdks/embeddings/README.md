@@ -27,7 +27,7 @@ async function run() {
     inputs: "<value>",
     model: "Wrangler",
   });
-
+  
   // Handle the result
   console.log(result)
 }
