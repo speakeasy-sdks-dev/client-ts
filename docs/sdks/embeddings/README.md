@@ -52,7 +52,7 @@ const mistral = new MistralCore({
 async function run() {
   const res = await embeddingsCreate(mistral, {
     inputs: "<value>",
-    model: "El Camino",
+    model: "Wrangler",
   });
 
   if (!res.ok) {

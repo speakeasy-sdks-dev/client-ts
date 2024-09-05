@@ -126,7 +126,7 @@ const mistral = new MistralCore({
 
 async function run() {
   const res = await fineTuningJobsCreate(mistral, {
-    model: "mistral-large-latest",
+    model: "codestral-latest",
     hyperparameters: {},
   });
 
@@ -204,7 +204,7 @@ const mistral = new MistralCore({
 
 async function run() {
   const res = await fineTuningJobsGet(mistral, {
-    jobId: "ed5f0cf0-7c66-4222-8821-0d5a28144bbc",
+    jobId: "b18d8d81-fd7b-4764-a31e-475cb1f36591",
   });
 
   if (!res.ok) {
@@ -281,7 +281,7 @@ const mistral = new MistralCore({
 
 async function run() {
   const res = await fineTuningJobsCancel(mistral, {
-    jobId: "dc5409f0-bbe9-449e-837e-33a2d6618375",
+    jobId: "03fa7112-315a-4072-a9f2-43f3f1ec962e",
   });
 
   if (!res.ok) {
@@ -358,7 +358,7 @@ const mistral = new MistralCore({
 
 async function run() {
   const res = await fineTuningJobsStart(mistral, {
-    jobId: "b662786a-f8e8-4548-822c-b4a778d30ec3",
+    jobId: "0eb0f807-fb9f-4e46-9c13-4e257df6e1ba",
   });
 
   if (!res.ok) {
