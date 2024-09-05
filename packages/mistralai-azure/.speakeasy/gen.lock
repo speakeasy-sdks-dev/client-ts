@@ -3,8 +3,8 @@ id: 01e8a40b-3df3-4d9a-9501-2eb9e0d26c05
 management:
   docChecksum: 9128fabc3ae45ecc9ed7fae8991b3d3e
   docVersion: 0.0.2
-  speakeasyVersion: 1.378.0
-  generationVersion: 2.404.3
+  speakeasyVersion: internal
+  generationVersion: 2.410.1
   releaseVersion: 1.0.4
   configChecksum: 1bf151a94ed63e8a355876d008b39575
   repoURL: https://github.com/mistralai/client-ts.git
@@ -15,7 +15,7 @@ features:
   typescript:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.11
-    core: 3.14.1
+    core: 3.16.2
     defaultEnabledRetries: 0.1.0
     envVarSecurityUsage: 0.1.1
     examples: 2.81.4
@@ -51,6 +51,7 @@ generatedFiles:
   - src/lib/encodings.ts
   - src/lib/env.ts
   - src/lib/event-streams.ts
+  - src/lib/files.ts
   - src/lib/http.ts
   - src/lib/is-plain-object.ts
   - src/lib/logger.ts
@@ -72,6 +73,7 @@ generatedFiles:
   - src/types/index.ts
   - src/types/operations.ts
   - src/types/rfcdate.ts
+  - src/types/streams.ts
   - tsconfig.json
   - src/models/components/completionevent.ts
   - src/models/components/completionchunk.ts
@@ -145,3 +147,16 @@ generatedFiles:
   - src/hooks/hooks.ts
   - src/hooks/types.ts
   - src/hooks/index.ts
+examples:
+  stream_chat:
+    speakeasy-default-stream-chat:
+      requestBody:
+        application/json: {"model": "azureai", "messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}]}
+  chat_completion_v1_chat_completions_post:
+    speakeasy-default-chat-completion-v1-chat-completions-post:
+      requestBody:
+        application/json: {"model": "azureai", "messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}]}
+      responses:
+        "200":
+          application/json: {"id": "cmpl-e5cc70bb28c444948073e77776eb30ef", "object": "chat.completion", "model": "mistral-small-latest", "usage": {"prompt_tokens": 16, "completion_tokens": 34, "total_tokens": 50}, "created": 1702256327, "choices": []}
+        "422": {}
