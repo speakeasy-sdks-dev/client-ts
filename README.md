@@ -1,7 +1,33 @@
 # Mistral Typescript Client
 
+<!-- Start Summary [summary] -->
+## Summary
+
+Mistral AI API: Our Chat Completion and Embeddings APIs specification. Create your account on [La Plateforme](https://console.mistral.ai) to get access and read the [docs](https://docs.mistral.ai) to learn how to use it.
+<!-- End Summary [summary] -->
+
+<!-- Start Table of Contents [toc] -->
+## Table of Contents
+
+* [SDK Installation](#sdk-installation)
+* [Requirements](#requirements)
+* [SDK Example Usage](#sdk-example-usage)
+* [Available Resources and Operations](#available-resources-and-operations)
+* [Standalone functions](#standalone-functions)
+* [Server-sent event streaming](#server-sent-event-streaming)
+* [File uploads](#file-uploads)
+* [Retries](#retries)
+* [Error Handling](#error-handling)
+* [Server Selection](#server-selection)
+* [Custom HTTP Client](#custom-http-client)
+* [Authentication](#authentication)
+* [Debugging](#debugging)
+<!-- End Table of Contents [toc] -->
+
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
+
+The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/), [bun](https://bun.sh/) or [yarn](https://classic.yarnpkg.com/en/) package managers.
 
 ### NPM
 
@@ -225,6 +251,7 @@ async function run() {
 
     for await (const event of result) {
         // Handle the event
+        console.log(event);
     }
 }
 
@@ -352,7 +379,7 @@ Validation errors can also occur when either method arguments or data returned f
 
 ```typescript
 import { Mistral } from "@mistralai/mistralai";
-import { SDKValidationError } from "@mistralai/mistralai/models/errors";
+import { HTTPValidationError, SDKValidationError } from "@mistralai/mistralai/models/errors";
 
 const mistral = new Mistral({
     apiKey: process.env["MISTRAL_API_KEY"] ?? "",
@@ -362,6 +389,9 @@ async function run() {
     let result;
     try {
         result = await mistral.models.list();
+
+        // Handle the result
+        console.log(result);
     } catch (err) {
         switch (true) {
             case err instanceof SDKValidationError: {
@@ -371,8 +401,9 @@ async function run() {
                 console.error(err.rawValue);
                 return;
             }
-            case err instanceof errors.HTTPValidationError: {
-                console.error(err); // handle exception
+            case err instanceof HTTPValidationError: {
+                // Handle err.data$: HTTPValidationErrorData
+                console.error(err);
                 return;
             }
             default: {
@@ -380,9 +411,6 @@ async function run() {
             }
         }
     }
-
-    // Handle the result
-    console.log(result);
 }
 
 run();
