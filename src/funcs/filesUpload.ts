@@ -3,6 +3,7 @@
  */
 
 import { MistralCore } from "../core.js";
+import { readableStreamToArrayBuffer } from "../lib/files.js";
 import * as m$ from "../lib/matchers.js";
 import * as schemas$ from "../lib/schemas.js";
 import { RequestOptions } from "../lib/sdks.js";
@@ -21,6 +22,7 @@ import { SDKValidationError } from "../models/errors/sdkvalidationerror.js";
 import * as operations from "../models/operations/index.js";
 import { isBlobLike } from "../types/blobs.js";
 import { Result } from "../types/fp.js";
+import { isReadableStream } from "../types/streams.js";
 
 /**
  * Upload File
@@ -64,6 +66,10 @@ export async function filesUpload(
 
     if (isBlobLike(payload$.file)) {
         body$.append("file", payload$.file);
+    } else if (isReadableStream(payload$.file.content)) {
+        const buffer = await readableStreamToArrayBuffer(payload$.file.content);
+        const blob = new Blob([buffer], { type: "application/octet-stream" });
+        body$.append("file", blob);
     } else {
         body$.append(
             "file",
