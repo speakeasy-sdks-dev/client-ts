@@ -126,7 +126,7 @@ const mistral = new Mistral({
 
 async function run() {
   const result = await mistral.files.upload({
-    file: await openAsBlob("./sample-file"),
+    file: await openAsBlob("example.file"),
   });
 
   // Handle the result
@@ -298,7 +298,7 @@ const mistral = new Mistral({
 
 async function run() {
   const result = await mistral.files.upload({
-    file: await openAsBlob("./sample-file"),
+    file: await openAsBlob("example.file"),
   });
 
   // Handle the result

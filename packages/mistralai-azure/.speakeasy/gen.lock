@@ -17,6 +17,7 @@ features:
     constsAndDefaults: 0.1.11
     core: 3.17.2
     defaultEnabledRetries: 0.1.0
+    enumUnions: 0.1.0
     envVarSecurityUsage: 0.1.1
     examples: 2.81.4
     globalSecurity: 2.82.11
