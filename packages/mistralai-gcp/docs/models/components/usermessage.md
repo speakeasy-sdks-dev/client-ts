@@ -6,11 +6,11 @@
 import { UserMessage } from "@mistralai/mistralai-gcp/models/components";
 
 let value: UserMessage = {
-    content: [
-        {
-            text: "<value>",
-        },
-    ],
+  content: [
+    {
+      text: "<value>",
+    },
+  ],
 };
 ```
 

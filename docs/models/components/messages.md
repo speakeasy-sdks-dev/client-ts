@@ -6,11 +6,11 @@
 import { Messages } from "@mistralai/mistralai/models/components";
 
 let value: Messages = {
-    content: [
-        {
-            text: "<value>",
-        },
-    ],
+  content: [
+    {
+      text: "<value>",
+    },
+  ],
 };
 ```
 
