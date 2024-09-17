@@ -6,7 +6,7 @@
 import { ContentChunk } from "@mistralai/mistralai-gcp/models/components";
 
 let value: ContentChunk = {
-    text: "<value>",
+  text: "<value>",
 };
 ```
 
