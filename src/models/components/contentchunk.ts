@@ -5,30 +5,34 @@
 import * as z from "zod";
 
 export type ContentChunk = {
-    type?: "text" | undefined;
-    text: string;
+  type?: "text" | undefined;
+  text: string;
 };
 
 /** @internal */
-export const ContentChunk$inboundSchema: z.ZodType<ContentChunk, z.ZodTypeDef, unknown> = z.object({
-    type: z.literal("text").default("text"),
-    text: z.string(),
+export const ContentChunk$inboundSchema: z.ZodType<
+  ContentChunk,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  type: z.literal("text").default("text"),
+  text: z.string(),
 });
 
 /** @internal */
 export type ContentChunk$Outbound = {
-    type: "text";
-    text: string;
+  type: "text";
+  text: string;
 };
 
 /** @internal */
 export const ContentChunk$outboundSchema: z.ZodType<
-    ContentChunk$Outbound,
-    z.ZodTypeDef,
-    ContentChunk
+  ContentChunk$Outbound,
+  z.ZodTypeDef,
+  ContentChunk
 > = z.object({
-    type: z.literal("text").default("text" as const),
-    text: z.string(),
+  type: z.literal("text").default("text" as const),
+  text: z.string(),
 });
 
 /**
@@ -36,10 +40,10 @@ export const ContentChunk$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace ContentChunk$ {
-    /** @deprecated use `ContentChunk$inboundSchema` instead. */
-    export const inboundSchema = ContentChunk$inboundSchema;
-    /** @deprecated use `ContentChunk$outboundSchema` instead. */
-    export const outboundSchema = ContentChunk$outboundSchema;
-    /** @deprecated use `ContentChunk$Outbound` instead. */
-    export type Outbound = ContentChunk$Outbound;
+  /** @deprecated use `ContentChunk$inboundSchema` instead. */
+  export const inboundSchema = ContentChunk$inboundSchema;
+  /** @deprecated use `ContentChunk$outboundSchema` instead. */
+  export const outboundSchema = ContentChunk$outboundSchema;
+  /** @deprecated use `ContentChunk$Outbound` instead. */
+  export type Outbound = ContentChunk$Outbound;
 }

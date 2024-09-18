@@ -6,7 +6,7 @@
 import { SystemMessage } from "@mistralai/mistralai/models/components";
 
 let value: SystemMessage = {
-    content: "<value>",
+  content: "<value>",
 };
 ```
 
