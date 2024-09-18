@@ -6,8 +6,8 @@
 import { ModelCard } from "@mistralai/mistralai/models/components";
 
 let value: ModelCard = {
-    id: "<id>",
-    capabilities: {},
+  id: "<id>",
+  capabilities: {},
 };
 ```
 

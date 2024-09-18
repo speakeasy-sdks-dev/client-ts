@@ -6,12 +6,12 @@
 import { Tool } from "@mistralai/mistralai-gcp/models/components";
 
 let value: Tool = {
-    function: {
-        name: "<value>",
-        parameters: {
-            key: "<value>",
-        },
+  function: {
+    name: "<value>",
+    parameters: {
+      "key": "<value>",
     },
+  },
 };
 ```
 
