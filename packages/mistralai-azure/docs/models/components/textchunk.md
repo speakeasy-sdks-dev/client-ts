@@ -6,7 +6,7 @@
 import { TextChunk } from "@mistralai/mistralai-azure/models/components";
 
 let value: TextChunk = {
-    text: "<value>",
+  text: "<value>",
 };
 ```
 

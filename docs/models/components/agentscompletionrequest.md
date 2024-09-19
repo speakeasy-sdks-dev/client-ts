@@ -6,13 +6,13 @@
 import { AgentsCompletionRequest } from "@mistralai/mistralai/models/components";
 
 let value: AgentsCompletionRequest = {
-    messages: [
-        {
-            content: "Who is the best French painter? Answer in one short sentence.",
-            role: "user",
-        },
-    ],
-    agentId: "<value>",
+  messages: [
+    {
+      content: "Who is the best French painter? Answer in one short sentence.",
+      role: "user",
+    },
+  ],
+  agentId: "<value>",
 };
 ```
 

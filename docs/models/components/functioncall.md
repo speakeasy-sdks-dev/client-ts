@@ -6,8 +6,8 @@
 import { FunctionCall } from "@mistralai/mistralai/models/components";
 
 let value: FunctionCall = {
-    name: "<value>",
-    arguments: "<value>",
+  name: "<value>",
+  arguments: "<value>",
 };
 ```
 
