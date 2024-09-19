@@ -3,8 +3,8 @@ id: 81b65c50-f2e3-40a3-bd65-346524007b3d
 management:
   docChecksum: e75ca54601920b2770d9a559b299d272
   docVersion: 0.0.2
-  speakeasyVersion: 1.399.3
-  generationVersion: 2.420.2
+  speakeasyVersion: internal
+  generationVersion: 2.420.3
   releaseVersion: 1.1.0
   configChecksum: fa99b0d0b544e1003aaeca9cacf619db
   repoURL: https://github.com/mistralai/client-ts.git
