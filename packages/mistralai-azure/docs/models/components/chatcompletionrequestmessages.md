@@ -5,13 +5,7 @@
 ```typescript
 import { ChatCompletionRequestMessages } from "@mistralai/mistralai-azure/models/components";
 
-let value: ChatCompletionRequestMessages = {
-  content: [
-    {
-      text: "<value>",
-    },
-  ],
-};
+let value: ChatCompletionRequestMessages = {};
 ```
 
 ## Supported Types
