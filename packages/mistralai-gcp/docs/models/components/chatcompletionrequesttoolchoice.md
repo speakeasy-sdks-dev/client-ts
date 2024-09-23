@@ -5,7 +5,7 @@
 ```typescript
 import { ChatCompletionRequestToolChoice } from "@mistralai/mistralai-gcp/models/components";
 
-let value: ChatCompletionRequestToolChoice = "auto";
+let value: ChatCompletionRequestToolChoice = "any";
 ```
 
 ## Supported Types
