@@ -29,9 +29,9 @@ const mistral = new Mistral({
 
 async function run() {
   const result = await mistral.models.list();
-  
+
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -61,7 +61,7 @@ async function run() {
   const { value: result } = res;
 
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -104,9 +104,9 @@ async function run() {
   const result = await mistral.models.retrieve({
     modelId: "ft:open-mistral-7b:587a6b29:20240514:7e773925",
   });
-  
+
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -138,7 +138,7 @@ async function run() {
   const { value: result } = res;
 
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -182,9 +182,9 @@ async function run() {
   const result = await mistral.models.delete({
     modelId: "ft:open-mistral-7b:587a6b29:20240514:7e773925",
   });
-  
+
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -216,7 +216,7 @@ async function run() {
   const { value: result } = res;
 
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -261,9 +261,9 @@ async function run() {
     modelId: "ft:open-mistral-7b:587a6b29:20240514:7e773925",
     updateFTModelIn: {},
   });
-  
+
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -296,7 +296,7 @@ async function run() {
   const { value: result } = res;
 
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -339,9 +339,9 @@ async function run() {
   const result = await mistral.models.archive({
     modelId: "ft:open-mistral-7b:587a6b29:20240514:7e773925",
   });
-  
+
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -373,7 +373,7 @@ async function run() {
   const { value: result } = res;
 
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -416,9 +416,9 @@ async function run() {
   const result = await mistral.models.unarchive({
     modelId: "ft:open-mistral-7b:587a6b29:20240514:7e773925",
   });
-  
+
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -450,7 +450,7 @@ async function run() {
   const { value: result } = res;
 
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();

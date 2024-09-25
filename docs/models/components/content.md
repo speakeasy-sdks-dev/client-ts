@@ -5,7 +5,11 @@
 ```typescript
 import { Content } from "@mistralai/mistralai/models/components";
 
-let value: Content = "<value>";
+let value: Content = [
+  {
+    text: "<value>",
+  },
+];
 ```
 
 ## Supported Types

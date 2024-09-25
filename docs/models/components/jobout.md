@@ -6,16 +6,16 @@
 import { JobOut } from "@mistralai/mistralai/models/components";
 
 let value: JobOut = {
-  id: "c816742c-b739-4205-9293-96fea7596eb1",
+  id: "32a47321-a235-4d1d-a1f7-f9b04141561b",
   autoStart: false,
   hyperparameters: {},
-  model: "open-mistral-7b",
-  status: "CANCELLATION_REQUESTED",
+  model: "mistral-small-latest",
+  status: "FAILED_VALIDATION",
   jobType: "<value>",
-  createdAt: 666767,
-  modifiedAt: 653140,
+  createdAt: 93940,
+  modifiedAt: 575947,
   trainingFiles: [
-    "a2352c59-5590-47af-b1a3-a2fa94677392",
+    "e5a2b429-0d0a-44bf-a399-93f7db4d6e9e",
   ],
 };
 ```

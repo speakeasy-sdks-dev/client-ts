@@ -14,36 +14,36 @@ import { Models } from "./models.js";
 export class Mistral extends ClientSDK {
   private _models?: Models;
   get models(): Models {
-    return (this._models ??= new Models(this.options$));
+    return (this._models ??= new Models(this._options));
   }
 
   private _files?: Files;
   get files(): Files {
-    return (this._files ??= new Files(this.options$));
+    return (this._files ??= new Files(this._options));
   }
 
   private _fineTuning?: FineTuning;
   get fineTuning(): FineTuning {
-    return (this._fineTuning ??= new FineTuning(this.options$));
+    return (this._fineTuning ??= new FineTuning(this._options));
   }
 
   private _chat?: Chat;
   get chat(): Chat {
-    return (this._chat ??= new Chat(this.options$));
+    return (this._chat ??= new Chat(this._options));
   }
 
   private _fim?: Fim;
   get fim(): Fim {
-    return (this._fim ??= new Fim(this.options$));
+    return (this._fim ??= new Fim(this._options));
   }
 
   private _agents?: Agents;
   get agents(): Agents {
-    return (this._agents ??= new Agents(this.options$));
+    return (this._agents ??= new Agents(this._options));
   }
 
   private _embeddings?: Embeddings;
   get embeddings(): Embeddings {
-    return (this._embeddings ??= new Embeddings(this.options$));
+    return (this._embeddings ??= new Embeddings(this._options));
   }
 }

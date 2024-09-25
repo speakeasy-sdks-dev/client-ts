@@ -11,7 +11,7 @@ let value:
   RetrieveModelV1ModelsModelIdGetResponseRetrieveModelV1ModelsModelIdGet = {
     id: "<id>",
     capabilities: {},
-    job: "Customer Program Technician",
+    job: "Human Response Facilitator",
     root: "<value>",
   };
 ```

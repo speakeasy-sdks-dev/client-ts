@@ -5,7 +5,11 @@
 ```typescript
 import { AgentsCompletionRequestToolChoice } from "@mistralai/mistralai/models/components";
 
-let value: AgentsCompletionRequestToolChoice = "auto";
+let value: AgentsCompletionRequestToolChoice = {
+  function: {
+    name: "<value>",
+  },
+};
 ```
 
 ## Supported Types

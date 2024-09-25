@@ -5,7 +5,7 @@
 ```typescript
 import { ChatCompletionStreamRequestToolChoice } from "@mistralai/mistralai/models/components";
 
-let value: ChatCompletionStreamRequestToolChoice = "none";
+let value: ChatCompletionStreamRequestToolChoice = "any";
 ```
 
 ## Supported Types
