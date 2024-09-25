@@ -5,9 +5,7 @@
 ```typescript
 import { Messages } from "@mistralai/mistralai/models/components";
 
-let value: Messages = {
-  content: "<value>",
-};
+let value: Messages = {};
 ```
 
 ## Supported Types

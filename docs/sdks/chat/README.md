@@ -33,9 +33,9 @@ async function run() {
       },
     ],
   });
-  
+
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -73,7 +73,7 @@ async function run() {
   const { value: result } = res;
 
   // Handle the result
-  console.log(result)
+  console.log(result);
 }
 
 run();
@@ -123,7 +123,7 @@ async function run() {
       },
     ],
   });
-  
+
   for await (const event of result) {
     // Handle the event
     console.log(event);

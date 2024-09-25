@@ -11,8 +11,8 @@ let value: FileSchema = {
   bytes: 13000,
   createdAt: 1716963433,
   filename: "files_upload.jsonl",
-  sampleType: "instruct",
-  source: "repository",
+  sampleType: "pretrain",
+  source: "upload",
 };
 ```
 

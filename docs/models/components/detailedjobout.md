@@ -6,21 +6,21 @@
 import { DetailedJobOut } from "@mistralai/mistralai/models/components";
 
 let value: DetailedJobOut = {
-  id: "5471b5e6-e13b-499d-888e-1e91e450ad2a",
+  id: "1dc961b7-bdfd-405b-b280-30c35eb02993",
   autoStart: false,
   hyperparameters: {},
   model: "mistral-large-latest",
-  status: "CANCELLED",
+  status: "FAILED_VALIDATION",
   jobType: "<value>",
-  createdAt: 289406,
-  modifiedAt: 264730,
+  createdAt: 589910,
+  modifiedAt: 730122,
   trainingFiles: [
-    "269802d5-02a9-44bb-8f63-c969e9a3efa7",
+    "4632fb73-4064-4b62-b01a-78ef3a40c569",
   ],
   checkpoints: [
     {
       metrics: {},
-      stepNumber: 449198,
+      stepNumber: 628982,
       createdAt: 1716963433,
     },
   ],

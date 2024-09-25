@@ -13,7 +13,7 @@ let value: ListFilesOut = {
       bytes: 13000,
       createdAt: 1716963433,
       filename: "files_upload.jsonl",
-      sampleType: "instruct",
+      sampleType: "pretrain",
       source: "upload",
     },
   ],

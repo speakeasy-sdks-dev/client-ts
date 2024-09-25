@@ -8,15 +8,17 @@ OK
 import { JobsApiRoutesFineTuningCreateFineTuningJobResponse } from "@mistralai/mistralai/models/operations";
 
 let value: JobsApiRoutesFineTuningCreateFineTuningJobResponse = {
-  expectedDurationSeconds: 220,
-  cost: 10,
-  costCurrency: "EUR",
-  trainTokensPerStep: 131072,
-  trainTokens: 1310720,
-  dataTokens: 305375,
-  details: "<value>",
-  epochs: 4.2922,
-  trainingSteps: 10,
+  id: "52f77a52-d383-41df-afec-516320b0c211",
+  autoStart: false,
+  hyperparameters: {},
+  model: "mistral-small-latest",
+  status: "RUNNING",
+  jobType: "<value>",
+  createdAt: 557369,
+  modifiedAt: 860552,
+  trainingFiles: [
+    "b420447a-b462-4c0b-bcc4-5945370c1849",
+  ],
 };
 ```
 

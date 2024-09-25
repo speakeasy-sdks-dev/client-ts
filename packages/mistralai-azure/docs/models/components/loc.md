@@ -5,7 +5,7 @@
 ```typescript
 import { Loc } from "@mistralai/mistralai-azure/models/components";
 
-let value: Loc = "<value>";
+let value: Loc = 925597;
 ```
 
 ## Supported Types

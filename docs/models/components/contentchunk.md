@@ -6,7 +6,9 @@
 import { ContentChunk } from "@mistralai/mistralai/models/components";
 
 let value: ContentChunk = {
-  text: "<value>",
+  imageUrl: {
+    url: "https://outrageous-subexpression.com/",
+  },
 };
 ```
 

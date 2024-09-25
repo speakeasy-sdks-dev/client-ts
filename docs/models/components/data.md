@@ -8,7 +8,7 @@ import { Data } from "@mistralai/mistralai/models/components";
 let value: Data = {
   id: "<id>",
   capabilities: {},
-  job: "Customer Assurance Facilitator",
+  job: "Legacy Communications Designer",
   root: "<value>",
 };
 ```

@@ -5,11 +5,7 @@
 ```typescript
 import { ChatCompletionRequestToolChoice } from "@mistralai/mistralai/models/components";
 
-let value: ChatCompletionRequestToolChoice = {
-  function: {
-    name: "<value>",
-  },
-};
+let value: ChatCompletionRequestToolChoice = "any";
 ```
 
 ## Supported Types
