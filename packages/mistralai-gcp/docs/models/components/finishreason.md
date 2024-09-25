@@ -5,7 +5,7 @@
 ```typescript
 import { FinishReason } from "@mistralai/mistralai-gcp/models/components";
 
-let value: FinishReason = "error";
+let value: FinishReason = "length";
 ```
 
 ## Values
