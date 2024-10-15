@@ -1,28 +1,21 @@
 # Content
 
-## Example Usage
-
-```typescript
-import { Content } from "@mistralai/mistralai-azure/models/components";
-
-let value: Content = [
-  {
-    text: "<value>",
-  },
-];
-```
 
 ## Supported Types
 
 ### `string`
 
 ```typescript
-const value: string = /* values here */
+const value: string = "<value>";
 ```
 
 ### `components.TextChunk[]`
 
 ```typescript
-const value: components.TextChunk[] = /* values here */
+const value: components.TextChunk[] = [
+  {
+    text: "<value>",
+  },
+];
 ```
 

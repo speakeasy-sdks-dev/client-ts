@@ -3,10 +3,10 @@ id: 01e8a40b-3df3-4d9a-9501-2eb9e0d26c05
 management:
   docChecksum: e99cb4d498ede912c81ab20b7828c0e3
   docVersion: 0.0.2
-  speakeasyVersion: 1.399.3
-  generationVersion: 2.420.2
+  speakeasyVersion: internal
+  generationVersion: 2.438.7
   releaseVersion: 1.1.0
-  configChecksum: 394c4e8111cab57180b9bf30fa72d171
+  configChecksum: 9c554a80fcae8e9f626604cdb73c1a9e
   repoURL: https://github.com/mistralai/client-ts.git
   repoSubDirectory: packages/mistralai-azure
   installationURL: https://gitpkg.now.sh/mistralai/client-ts/packages/mistralai-azure
@@ -15,7 +15,7 @@ features:
   typescript:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.11
-    core: 3.17.5
+    core: 3.18.2
     defaultEnabledRetries: 0.1.0
     enumUnions: 0.1.0
     envVarSecurityUsage: 0.1.1
@@ -30,7 +30,7 @@ features:
     responseFormat: 0.2.3
     retries: 2.83.0
     sdkHooks: 0.1.0
-    serverEvents: 0.1.4
+    serverEvents: 0.1.5
     serverEventsSentinels: 0.1.0
     serverIDs: 2.81.2
     unions: 2.85.7

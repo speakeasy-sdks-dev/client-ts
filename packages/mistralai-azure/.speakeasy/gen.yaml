@@ -23,6 +23,7 @@ typescript:
   enumFormat: union
   envVarPrefix: MISTRAL
   flattenGlobalSecurity: true
+  flatteningOrder: body-first
   imports:
     option: openapi
     paths:
